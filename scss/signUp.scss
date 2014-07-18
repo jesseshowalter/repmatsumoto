@@ -1,0 +1,37 @@
+/*-----------------------------------*\
+	$SIGNUP
+\*-----------------------------------*/
+
+.signUp{
+	background:url("img/red_pattern.gif") repeat;
+	padding:20px 0;
+	overflow:hidden;
+
+	p{
+		color:white;
+		float:left;
+		font-size:2.1em;
+		margin-top:40px;
+		text-transform: uppercase;
+	}
+	a{
+		float:right;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.signUp{
+		text-align:center;
+
+		p{
+			font-size:2em;
+			line-height:40px;
+			margin-top:20px;
+		}
+
+		.btn{
+			float:left;
+			width:88%;
+		}
+	}
+}

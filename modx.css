@@ -1,0 +1,10 @@
+.photo-left{
+	width:auto;
+	float:left;
+	margin: 7px 20px 10px 1px;
+}
+.photo-right{
+	width:auto;
+	float:right;
+	margin: 7px 1px 10px 20px;
+}

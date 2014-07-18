@@ -1,0 +1,21 @@
+div.menu{
+	background-color: #fff !important;
+	background: #fff !important;
+	border-bottom:1px solid #CCC;
+}
+
+.menuBar .menu ul li ul.sub-menu{
+	width:400px !important;
+}
+
+.blogList article section{
+	width:50%;
+}
+
+
+
+@media screen and (max-width: 838px) {
+	.menuBar .menu ul{
+		background:#CD1711 !important;
+	}
+}

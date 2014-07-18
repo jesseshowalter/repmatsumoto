@@ -1,0 +1,27 @@
+ul{
+	list-style: none outside none;
+    padding-left: 0;
+}
+.gallery li {
+	display: block;
+	float: left;
+	height: 100px;
+	margin-bottom: 6px;
+	margin-right: 6px;
+	width: 100px;
+}
+
+.interiorContent .three-of-four ul.gallery {
+	margin:10px 0 20px 1px !important;
+}
+.interiorContent .three-of-four .gallery li:first-child{
+	margin-left: 0 !important;
+}
+.gallery li a {
+	height: 100px;
+	width: 100px;
+}
+.interiorContent .three-of-four .gallery li a img {
+	max-width: 100px;
+	border:none !important;
+}

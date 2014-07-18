@@ -1,0 +1,55 @@
+/*-----------------------------------*\
+	$MAIN
+\*-----------------------------------*/
+
+.hero{
+	background: url("img/hero1.jpg") no-repeat center center;
+	text-align: center;
+	color:#FFF; 
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+
+	section{
+		margin:300px 0 80px;	
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	html {
+		font-size: 100%;
+	}
+	
+	.hero{ 
+		margin-top:-2px;
+		
+		section{
+			margin:300px 0 0;
+		}
+	}
+}
+
+
+@media screen and (max-width: 650px) {
+	html {
+		font-size: 100%;
+	}
+
+	.hero{
+		background: url("img/hero2.jpg") no-repeat center center;
+		background-size:cover;
+		h1{
+			font-size:2rem;
+		}
+		section{
+			margin:50px 0 20px;
+		}
+		.btn{
+			padding: 15px 70px;
+		}
+	}
+}
+
+

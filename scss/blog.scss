@@ -1,0 +1,141 @@
+/*-----------------------------------*\
+	$BLOG
+\*-----------------------------------*/
+
+.blogList{
+
+	article{
+		border:1px solid #CCC;
+		width:100%;
+		height:auto;
+		float:left;
+		position: relative;
+		border-top:10px solid $contrasting-color;
+		margin-bottom:20px;
+		
+		div{
+			float:left;
+			width:30%;
+
+			img{
+				width:100%;
+				border:1px solid #CCC;
+
+			}
+		}
+
+
+		time{
+			position: absolute;
+			left:0;
+			background:$contrasting-color;
+			padding:8px;
+			color:#fff;
+			top:-10px;
+		}
+		section{
+			float:left;
+			width:70%;
+			padding-top:30px;
+			padding-left:30px;
+			padding-right:30px;
+			padding-bottom:30px;
+
+			h3{margin-bottom:10px;}
+		}
+		
+		a:link, a:visited{
+			color:$secondary-color;
+			@include quick;
+			font-size:1.1em;
+		}
+		a:hover, a:active, a:focus{
+			color:$primary-color;
+			@include quick;
+		}
+		a:link:after{
+			content:"➜";
+			position: absolute;
+			color: $secondary-color;
+			font-size: 1em;
+			margin-left:8px;
+			z-index: 1;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			transition: all 0.3s;
+		}
+
+	}
+
+}
+
+.blogPost{
+
+	article{
+		width:80%;
+		margin:0 auto;
+		text-align: center;
+
+		h3{
+			text-align: center;
+			font-size: 2em;
+			margin-bottom:15px;
+			color:$secondary-color;
+		}
+		time{
+			color:#ccc;
+		}
+		img.postBanner{
+			margin:20px auto 40px;
+			display:block;
+			width:100%;
+			border:20px solid #fff;
+			box-shadow:0 0 8px #CCC;
+		}
+		h4{
+			text-align:left;
+			font-size: 1.6em;
+			margin-bottom: 10px;
+		}
+		p{
+			text-align: justify;
+			// line-height: 1.6em;
+		}
+
+		ul{
+			margin:10px 0 20px 20px;
+			li{
+				list-style: circle;
+				line-height: 1.8em;
+				margin-left: 20px;
+				text-align: left;
+			}
+		}
+		ol{
+			margin:10px 0 20px 20px;
+			li{
+				line-height: 1.8em;
+				margin-left: 20px;
+				list-style: decimal;
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 760px) {
+
+	.blogList{
+
+		article{
+
+			div{
+				width:100%;
+			}
+			section{
+				width:100%
+			}
+
+		}
+	}
+}
